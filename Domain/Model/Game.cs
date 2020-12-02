@@ -25,5 +25,10 @@ namespace Domain.Model
             }
             return OperationResult.BuildFailure(fork.ErrorMessage);
         }
+
+        public void ChangeDirection(DirectionType direction)
+        {
+            CurrentDirection = direction;
+        }
     }
 }
